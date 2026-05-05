@@ -13,12 +13,12 @@ FetchContent_Declare(
 )
 
 FetchContent_Declare(
-    json
+    nlohmann_json
     GIT_REPOSITORY https://github.com/nlohmann/json.git
     GIT_TAG v3.11.3
 )
 
-FetchContent_MakeAvailable(httplib json)
+FetchContent_MakeAvailable(httplib nlohmann_json)
 
 add_executable(cpp_api
     src/main.cpp
